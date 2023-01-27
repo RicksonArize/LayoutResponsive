@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
             }
 
             .title, h1, h2, h3, h4, h5, h6{
-                font-family: Quicksand;
+                font-family: 'Quicksand';
                 font-weight: bold;
             }
 
@@ -29,7 +29,7 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 100vh;
+                min-height: 100vh;
             }
 
             #top{
@@ -155,7 +155,7 @@
             }
 
             .content1-article font{
-                font-size: 1vw;
+                font-size: 1.2vw;
                 color: rgb(97, 97, 97);
             }
 
@@ -172,13 +172,7 @@
                 border-radius: 5px;
                 min-width: 180px;
                 background: linear-gradient(135deg, rgb(0, 159, 253) 0%, rgb(43, 54, 152) 100%);
-            }
-
-            .content2-title{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                color: #fff;
             }
 
             .content2-title{
@@ -198,8 +192,92 @@
             .content2-text{
                 text-align: center;
                 padding: 0 50px;
+                margin: 30px 0;
+                font-size: 1.2vw;
             }
+
+            .justify-title{
+                text-align: center;
+            }
+
+            .title-conten2{
+                font-size: 1.5vw;
+            }
+
+            .title-conten2-2{
+                font-size: 2.9vw;
+            }
+
+            #btn-content2{
+                background-color: rgb(243, 180, 54);
+                cursor: pointer;
+                padding: 10px;
+                margin-bottom: 15px;
+                font-size: 1.5vw;
+                font-weight: bold;
+                border: transparent;
+                border-radius: 4px;
+                width: 17vw;
+                height: 9vh;
+            }
+            
+            .content2-end{
+                margin-top: 10px;
+
+            }
+
+            .content2-ending{
+                font-size: 1.2vw;
+            }
+
+            /*--3--*/
+
+            .content3-double{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0 40px 40px 40px;
+                font-size: 1.2vw;
+                color: rgb(97, 97, 97);
+
+            }
+
+            .content3-left{
+                background: #fff;
+                flex: 2;
+                margin-right: 20px;
+                padding: 30px;
+                border-radius: 5px;
+                box-shadow: 1px 5px 10px grey;
+
+            }
+
+            .content3-right{
+                background: #fff;
+                flex: 2;
+                margin-left: 20px;
+                padding: 30px;
+                border-radius: 5px;
+                box-shadow: 1px 5px 10px grey;
+            }
+            
             /*------------FIM Content---------------*/
+
+            footer{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px;
+                margin: 0 40px 20px 40px;
+                border-radius: 4px;
+
+            }
+
+            .footer-right{
+                display: flex;
+                flex-direction: row;
+                padding: 0 5px 0 5px;
+            }
 
         </style>
 
@@ -255,11 +333,11 @@
                     </div>
                     <div class="content2-highlight">
                         <div class="content2-title">
-                            <div>
-                                <font class="title">Titlinho</font>
+                            <div class="justify-title">
+                                <font class="title title-conten2">Missing a connector for your favorite tool or service?</font>
                             </div>
                             <div>
-                                <b class="title">Title</b>
+                                <b class="title title-conten2-2">Try Dataddo!</b>
                             </div>
                         </div>
                         <div class="content2-text">
@@ -269,19 +347,51 @@
                         </div>
                         <div class="content2-end">
                             <div>
-                                link
+                                <button id="btn-content2" type="button"><span color="#000">Try 14-day trial</span></button>
                             </div>
                             <div>
-                                blablabla
+                                <font class="content2-ending">
+                                    No credit card required
+                                </font>
                             </div>
                         </div>
                     </div>
-                    <div style="background: gray;">
-                        4
+                    <div class="content3-double">
+                        <div class="content3-left">
+                            <font>
+                                Regardles of the systems, you are using, and the data you are working with, Dataddo provides centralized management and monitoring of all your data pipelines, eliminating undocumented flows and hidden dependencies.
+                            </font>
+                        </div>
+                        <div class="content3-right">
+                            <font>
+                                Regardles of the systems, you are using, and the data you are working with, Dataddo provides centralized management and monitoring of all your data pipelines, eliminating undocumented flows and hidden dependencies.
+                            </font>
+                        </div>
                     </div>
-                    <div style="background: pink;">
-                        5
-                    </div>
+                    <footer style="background: rgb(37, 43, 52);;">
+                        <div class="footer-left">
+                            <font color="#ffffff">Created by Dataddo, Inc. 2020&nbsp; &nbsp;|&nbsp; &nbsp;</font>
+                            <a href="http://www.dataddo.com"><font>www.dataddo.com</font></a>
+                            <font color="#ffffff">&nbsp; &nbsp;|&nbsp; &nbsp;hello@dataddo.com</font>
+                        </div>
+                        <div class="footer-right">
+                            <div class="footer-insta">
+                                <a href="https://www.instagram.com/Vieira_Oficial/"><img style="cursor: pointer;  filter: invert(1);" src="./icon-insta.png" alt="instagram"></a>
+                            </div>
+                            <div class="footer-linkedin">
+                                <a href="https://br.linkedin.com/school/colegioantoniovieira/"><img style="cursor: pointer;  filter: invert(1);" src="./icon-linkedin.png" alt="linkedin"></a>
+                            </div>
+                            <div class="footer-youtube">
+                                <a href="https://www.youtube.com/user/TVCAV"><img style="position: relative; bottom: 1px; width: 26px; height: 26px; cursor: pointer;  filter: invert(1);" src="./icon-youtube.png" alt="youtube"></a>
+                            </div>
+                            <div class="footer-face">
+                                <a href="https://www.facebook.com/vieiraoficial/"><img style="cursor: pointer;  filter: invert(1);" src="./icon-facebook.png" alt="facebook"></a>
+                            </div>
+                            <div class="footer-tiktok">
+                                <a href="https://www.tiktok.com/@colegioantoniovieira"><img style="cursor: pointer;  filter: invert(1);" src="./icon-tiktok.png" alt="tiktok"></a>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
             </div>
 
