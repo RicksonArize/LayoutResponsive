@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="css/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                font-family: 'Roboto';
+            }
+
+            .title, h1, h2, h3, h4, h5, h6{
+                font-family: Quicksand;
+                font-weight: bold;
+            }
+
+            /*-------------Main-------------*/
+            #main{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+            }
+
+            #top{
+                
+            }
+
+            #contentAll{
+                min-height: 800px;
+                background: red;
+                display: flex;
+                /* justify-content: ; */
+                flex-direction: row;
+            }
+
+            /*-------------FIM Main-------------*/
+
+
+
+            /*-------------Menu-------------*/
+            #menu{
+                flex: 1;
+                min-height: 100px;
+                background: linear-gradient(135deg, rgb(0, 159, 253) 0%, rgb(43, 54, 152) 100%);
+            }
+            /*---------------FIM Menu---------------*/
+
+
+
+            /*-------------Media-------------*/
+            @media (max-width: 768px) {
+                #contentAll {
+                    flex-direction: column;
+                    min-height: 768px;  
+                }
+    
+                #menu{
+                    display: none;
+                    min-height: 100px;
+                }
+
+                #content{
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100px;
+                }
+            }
+
+            @media (max-width: 992px){
+
+            }
+
+            @media (max-width: 1140px){
+                #content1 h2, font{
+                    
+                }
+            }
+
+
+            /*-------------FIM Media-------------*/
+
+
+
+            /*-------------Content-------------*/
+
+            #content{
+                flex: 4;
+                min-height: 100px;  
+            }
+
+            #title{
+                padding: 40px;
+                font-size: 36px;
+                font-family: Quicksand;
+                font-weight: bold;
+            }
+
+
+
+            /*--1--*/
+
+            #content1{
+                display: flex;
+                flex-direction: row;
+                margin: 0 40px 40px 40px;
+                padding: 30px;
+                background: #fff;
+                border-radius: 5px; 
+                box-shadow: 1px 5px 10px gray;
+                min-height: 180px;
+            }
+
+
+            .content1-img{
+                flex: 2;
+            }
+
+            .content1-img img{
+                width: 100%;
+                min-width: 280px;
+            }
+
+            .content1-article{
+                display: flex;
+                flex-direction: column;
+                flex: 3;
+                padding: 0 20px;
+                justify-content: center;
+                align-items: left;
+            }
+
+            .content-title{
+                margin-bottom: 20px;
+            }
+
+            .content-title h2{
+                font-size: 1.5vw;
+                font-weight: bold;
+                color: rgb(97, 97, 97);
+            }
+
+            .content-prologue{
+                margin-bottom: 10px ;
+            }
+
+            .content1-article font{
+                font-size: 1vw;
+                color: rgb(97, 97, 97);
+            }
+
+            /*--2--*/
+
+            .content2-highlight{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 40px 40px 40px;
+                padding: 30px;
+                background: #fff;
+                border-radius: 5px;
+                min-width: 180px;
+                background: linear-gradient(135deg, rgb(0, 159, 253) 0%, rgb(43, 54, 152) 100%);
+            }
+
+            .content2-title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .content2-title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .content2-end{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .content2-text{
+                text-align: center;
+                padding: 0 50px;
+            }
+            /*------------FIM Content---------------*/
+
+        </style>
+
+    </head>
+    <body>
+        <div id="main">
+            <div id="top" style="background: green;">
+                topo
+                <br />
+                topo
+                <br />
+                topo
+                <br />
+            </div>
+
+            <div id="contentAll">
+                <div id="menu">
+                    menu
+                    
+                </div>
+    
+                <div id="content" style="background: #f3f5f7;">
+                    <div id="title">
+                        <font color="#000000">YouTube Analytics</font>
+                    </div>
+                    <div id="content1">
+                        <div class="content1-img">
+                           <img src="./content1-png.png" alt="content1-png">
+                        </div>
+                        <div class="content1-article">
+                            <div class="content-title">
+                                <h2>How to connect our dashboard with your data</h2>
+                            </div>
+                            <div class="content-prologue">
+                                <font>
+                                    This quick tutorial introduces you to the process of connecting to your data. You can create as many data sources you want, but you only need one to get started.
+                                </font>
+                            </div>
+                            <div class="content-text">
+                                <font>
+                                    1) Make a copy of this report 
+                                    2) Connect a data source(s) to be added to the new report
+                                    3) If you start with sample data, then click on "Add data" icon 
+                                    4) Select a default Google Ads connector for the type of data you want to visualize.
+                                    5) Authorize Data Studio to connect to your data.
+                                    6) Provide your account details and configure any additional options or parameters.
+                                    7) Confirm your choices to create a data source based on this connection.
+                                    8) Continue to Analytics page
+                                </font>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content2-highlight">
+                        <div class="content2-title">
+                            <div>
+                                <font class="title">Titlinho</font>
+                            </div>
+                            <div>
+                                <b class="title">Title</b>
+                            </div>
+                        </div>
+                        <div class="content2-text">
+                            <font>
+                                Regardles of the systems, you are using, and the data you are working with, Dataddo provides centralized management and monitoring of all your data pipelines, eliminating undocumented flows and hidden dependencies.
+                            </font>
+                        </div>
+                        <div class="content2-end">
+                            <div>
+                                link
+                            </div>
+                            <div>
+                                blablabla
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: gray;">
+                        4
+                    </div>
+                    <div style="background: pink;">
+                        5
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </body>
+</html>
